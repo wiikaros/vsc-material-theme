@@ -1,8 +1,7 @@
 {
   "name": "vsc-material-theme-italicize",
   "displayName": "Material Theme Italicize",
-  "description":
-    "A fork of vsc-material-theme introducing syntactical sugar (like italicizing keywords)",
+  "description": "A fork of vsc-material-theme introducing syntactical sugar (like italicizing keywords)",
   "version": "0.0.13",
   "publisher": "Serge",
   "license": "Apache-2.0",
@@ -23,15 +22,12 @@
     "vscode": "^1.17.0"
   },
   "scripts": {
-    "build":
-      "npm run build-icons && npm run build-themes && npm run build-icons-accents && npm run build-icons-variants",
+    "build": "npm run build-icons && npm run build-themes && npm run build-icons-accents && npm run build-icons-variants",
     "minimize-icons": "svgo -f src/icons/svgs -o icons",
-    "minimize-json":
-      "json-minify themes/.material-theme-icons.tmp > themes/Material-Theme-Icons.json && npm run remove-icons-tmp",
+    "minimize-json": "json-minify themes/.material-theme-icons.tmp > themes/Material-Theme-Icons.json && npm run remove-icons-tmp",
     "remove-icons": "rimraf icons && rimraf themes/Material-Theme-Icons.json",
     "remove-icons-tmp": "rimraf themes/.material-theme-icons.tmp",
-    "build-icons":
-      "npm run remove-icons && npm run minimize-icons && gulp build:icons && npm run minimize-json",
+    "build-icons": "npm run remove-icons && npm run minimize-icons && gulp build:icons && npm run minimize-json",
     "build-icons-accents": "gulp build:icons.accents",
     "build-icons-variants": "gulp build:icons.variants",
     "build-themes": "gulp build:themes",
@@ -41,8 +37,13 @@
     "bump": "gulp bump",
     "tsc": "tsc"
   },
-  "categories": ["Themes", "Other"],
-  "activationEvents": ["*"],
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
   "main": "./extensions/material.theme.italicize.config",
   "contributes": {
     "commands": [
@@ -57,8 +58,7 @@
         "materialTheme.cache.workbench.accent": {
           "type": "string",
           "title": "[DEPRECATED] This is an old property.",
-          "description":
-            "This property is intended only for migrating old settings system to a new one. It will be removed in new versions. Don't use it, use \"materialTheme.cache.workbench.settings\" instead."
+          "description": "This property is intended only for migrating old settings system to a new one. It will be removed in new versions. Don't use it, use \"materialTheme.cache.workbench.settings\" instead."
         },
         "materialTheme.cache.workbench.settings": {
           "default": {},
@@ -70,9 +70,44 @@
     },
     "themes": [
       {
-        "label": "Material Theme Italicize",
+        "label": "Material Theme Italicize Default",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Material-Theme-Default.json"
+      },
+      {
+        "label": "Material Theme Italicize Default HC",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Material-Theme-Default-High-Contrast.json"
+      },
+      {
+        "label": "Material Theme Italicize Darker",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Material-Theme-Darker.json"
+      },
+      {
+        "label": "Material Theme Italicize Darker HC",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Material-Theme-Darker-High-Contrast.json"
+      },
+      {
+        "label": "Material Theme Italicize Palenight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Material-Theme-Palenight.json"
+      },
+      {
+        "label": "Material Theme Italicize Palenight HC",
         "uiTheme": "vs-dark",
         "path": "./themes/Material-Theme-Palenight-High-Contrast.json"
+      },
+      {
+        "label": "Material Theme Italicize Lighter",
+        "uiTheme": "vs",
+        "path": "./themes/Material-Theme-Lighter.json"
+      },
+      {
+        "label": "Material Theme Italicize Lighter HC",
+        "uiTheme": "vs",
+        "path": "./themes/Material-Theme-Lighter-High-Contrast.json"
       }
     ],
     "iconThemes": [
