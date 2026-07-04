@@ -3,7 +3,7 @@
   "displayName": "Material Theme Italicize",
   "description": "A fork of vsc-material-theme introducing syntactical sugar (like italicizing keywords)",
   "version": "0.0.13",
-  "publisher": "Serge",
+  "publisher": "wiikaros",
   "license": "Apache-2.0",
   "icon": "logo.png",
   "galleryBanner": {
@@ -19,7 +19,7 @@
     "url": "https://github.com/faultless/vsc-material-theme/issues"
   },
   "engines": {
-    "vscode": "^1.17.0"
+    "vscode": "^1.85.0"
   },
   "scripts": {
     "build": "npm run build-icons && npm run build-themes && npm run build-icons-accents && npm run build-icons-variants",
@@ -44,30 +44,15 @@
   "activationEvents": [
     "*"
   ],
-  "main": "./extensions/material.theme.italicize.config",
+  "main": "./extensions/accent-setter.js",
   "contributes": {
     "commands": [
       {
-        "category": "Material theme italicize",
-        "command": "material.theme.italicize.config",
-        "title": "Settings"
+        "category": "Material Theme",
+        "command": "material.theme.setAccent",
+        "title": "Set Accent Color"
       }
     ],
-    "configuration": {
-      "properties": {
-        "materialTheme.cache.workbench.accent": {
-          "type": "string",
-          "title": "[DEPRECATED] This is an old property.",
-          "description": "This property is intended only for migrating old settings system to a new one. It will be removed in new versions. Don't use it, use \"materialTheme.cache.workbench.settings\" instead."
-        },
-        "materialTheme.cache.workbench.settings": {
-          "default": {},
-          "type": "object",
-          "title": "Custom material theme settings",
-          "description": "Material theme settings object."
-        }
-      }
-    },
     "themes": [
       {
         "label": "Material Theme Italicize Default",
@@ -112,7 +97,7 @@
     ],
     "iconThemes": [
       {
-        "id": "eq-material-theme-icons",
+        "id": "wiikaros-material-theme-icons",
         "label": "Material Theme Icons",
         "path": "./themes/Material-Theme-Icons.json"
       }
@@ -126,6 +111,7 @@
     "@types/mustache": "0.8.29",
     "@types/run-sequence": "0.0.29",
     "@types/through2": "2.0.33",
+    "@types/vscode": "1.85.0",
     "@types/yamljs": "0.2.30",
     "@types/yargs": "6.6.0",
     "babel-core": "6.25.0",

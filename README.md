@@ -2,8 +2,8 @@
 <p align="center"><img width="620px" src="https://i.imgur.com/77xXWrA.jpg"/></p>
 <p align="center"><img width="450px" src="https://i.imgur.com/JXb5aRO.jpg"></p>
 
-[![GitHub tag](https://img.shields.io/github/release/faultless/vsc-material-theme.svg?style=flat-square)](https://github.com/faultless/vsc-material-theme/releases)   [![GitHub tag](https://img.shields.io/github/issues/faultless/vsc-material-theme.svg?style=flat-square)](https://github.com/faultless/vsc-material-theme/issues)
-<a href="https://code.visualstudio.com/updates/v1_12"><img src="https://img.shields.io/badge/VS_Code-v1.12+-373277.svg?style=flat-square"/></a> <a href="https://marketplace.visualstudio.com/items?itemName=Serge.vsc-material-theme-italicize"><img src="https://vsmarketplacebadge.apphb.com/installs/Serge.vsc-material-theme-italicize.svg?style=flat-square"/></a>
+[![GitHub tag](https://img.shields.io/github/release/faultless/vsc-material-theme.png?style=flat-square)](https://github.com/faultless/vsc-material-theme/releases)   [![GitHub tag](https://img.shields.io/github/issues/faultless/vsc-material-theme.png?style=flat-square)](https://github.com/faultless/vsc-material-theme/issues)
+<a href="https://code.visualstudio.com/updates/v1_12"><img src="https://img.shields.io/badge/VS_Code-v1.12+-373277.png?style=flat-square"/></a>
 
 > This fork aims to add some special font transforms (italicizing mainly) to important keywords.
 
