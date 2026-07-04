@@ -9,6 +9,7 @@
     "sidebarForeground": "#848484",
     "sidebarBackground": "#1A1A1A",
     "chromeBackground": "#1A1A1A",
+    "tabInactiveBackground": "#1E1E1E",
     "scrollbars": "#00000070",
     "comments": "#4A4A4A",
     "caret": "#FFCC00",

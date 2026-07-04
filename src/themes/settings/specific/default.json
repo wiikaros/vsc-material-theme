@@ -25,6 +25,7 @@
     "statusbarForeground": "#546E7A",
     "sidebarBackground": "#1E272C",
     "chromeBackground": "#1E272C",
+    "tabInactiveBackground": "#222C32",
     "sidebarForeground": "#607a86",
     "listHoverForeground": "#FFFFFF",
     "listHoverBackground": "#263238",
