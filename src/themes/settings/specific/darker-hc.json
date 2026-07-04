@@ -7,6 +7,8 @@
     "backgroundAlt": "#1a1a1a",
     "contrastBorder": "#000000",
     "sidebarForeground": "#848484",
+    "sidebarBackground": "#1A1A1A",
+    "chromeBackground": "#1A1A1A",
     "scrollbars": "#00000070",
     "comments": "#4A4A4A",
     "caret": "#FFCC00",
@@ -25,6 +27,7 @@
     "scrollbarsHover": "#00000030",
     "statusbarForeground": "#616161",
     "listHoverForeground": "#FFFFFF",
+    "listHoverBackground": "#212121",
     "tabActiveForeground": "#FFFFFF",
     "base": {
       "white": "#ffffff",

@@ -25,6 +25,7 @@
     "scrollbarsHover": "#00000030",
     "statusbarForeground": "#7E939E",
     "sidebarBackground": "#FAFAFA",
+    "chromeBackground": "#FAFAFA",
     "listHoverForeground": "#B1C7D3",
     "listHoverBackground": "#FAFAFA",
     "tabActiveForeground": "#000000",
